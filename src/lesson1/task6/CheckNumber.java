@@ -16,25 +16,27 @@ public class CheckNumber {
     }
     static void checkNumber(int number, int base, int lastDigit) {
         int countBase = 0;
+        System.out.println("Проверяем число " + number + ":");
         for (int i = 0; i < String.valueOf(number).length(); i++) {
             countBase++;
             if (i == String.valueOf(number).length() - 1) {
                 if (countBase == base) {
-                    System.out.println("Число является " + base + " значным");
+                    System.out.println("1. Число является " + base + " значным");
                 } else {
-                    System.out.println("Число не является " + base + " значным");
+                    System.out.println("1. Число не является " + base + " значным");
                 }
                 if (number % 10 == lastDigit) {
-                    System.out.println("Последняя цифра равна " + lastDigit);
+                    System.out.println("2. Последняя цифра равна " + lastDigit);
                 } else {
-                    System.out.println("Последняя цифра не равна " + lastDigit);
+                    System.out.println("2. Последняя цифра не равна " + lastDigit);
                 }
             }
         }
         if (number % 2 == 0) {
-            System.out.println("Число четное");
+            System.out.println("3. Число четное");
         } else {
-            System.out.println("Число нечетное");
+            System.out.println("3. Число нечетное");
         }
+        System.out.println();
     }
 }
