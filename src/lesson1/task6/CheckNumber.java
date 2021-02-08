@@ -1,9 +1,18 @@
 package lesson1.task6;
 
+import static lesson1.Base.generateRandomDigitNumber;
+
 public class CheckNumber {
     public static void main(String[] args) {
-        int number = 967;
-        checkNumber(number, 3, 7);
+        int number;
+        for (int i = 0; i < 5; i++) {
+            if (i == 2) {
+                number = generateRandomDigitNumber(3);
+            } else {
+                number = generateRandomDigitNumber(4);
+            }
+            checkNumber(number, 3, 7);
+        }
     }
     static void checkNumber(int number, int base, int lastDigit) {
         int countBase = 0;

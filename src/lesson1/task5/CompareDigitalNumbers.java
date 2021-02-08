@@ -1,8 +1,5 @@
 package lesson1.task5;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static lesson1.Base.generateRandomDigitNumber;
 
 public class CompareDigitalNumbers {
