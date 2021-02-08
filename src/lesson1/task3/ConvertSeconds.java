@@ -1,12 +1,14 @@
 package lesson1.task3;
 
+import static lesson1.Base.generateRandomDigitNumber;
+
 public class ConvertSeconds {
     private static final int SEC_OF_WEEK = 604800;
     private static final int SEC_OF_DAY = 86400;
     private static final int SEC_OF_HOUR = 3600;
     private static final int SEC_OF_MIN = 60;
     public static void main(String[] args) {
-        int seconds = 1 + (int)(Math.random() * 9999999);
+        int seconds = generateRandomDigitNumber(4);
         convertSeconds(seconds, false, false, false, true);
         convertSeconds(seconds, false, false, true, true);
         convertSeconds(seconds, false, true, true, true);
