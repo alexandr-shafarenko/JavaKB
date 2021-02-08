@@ -2,6 +2,7 @@ package lesson1.task7;
 
 public class CloseFigure {
     public static void main(String[] args) {
+        checkCloseFigure(2, 4, 3);
         checkCloseFigure(2, 4, 2);
     }
     static void checkCloseFigure (int a, int b, int r) {
