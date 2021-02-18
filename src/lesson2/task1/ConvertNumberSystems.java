@@ -1,6 +1,4 @@
-package lesson1.task1;
-
-import javax.xml.stream.events.Characters;
+package lesson2.task1;
 
 public class ConvertNumberSystems {
     public static void main(String[] args) {
