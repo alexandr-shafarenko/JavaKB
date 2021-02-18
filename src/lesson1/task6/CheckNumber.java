@@ -14,6 +14,7 @@ public class CheckNumber {
             checkNumber(number, 3, 7);
         }
     }
+
     static void checkNumber(int number, int base, int lastDigit) {
         int countBase = 0;
         System.out.println("Проверяем число " + number + ":");
